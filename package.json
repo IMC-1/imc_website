@@ -1,4 +1,5 @@
 {
+  "homepage": "https://IMC-1.github.io/imc_website",
   "name": "website",
   "version": "0.1.0",
   "private": true,
@@ -16,7 +17,7 @@
     "web-vitals": "^2.1.4",
     "webpack": "^5.95.0"
   },
-  "homepage": "https://nourarmy.github.io/imc_website",
+  
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
@@ -46,6 +47,6 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@testing-library/react": "^16.0.1",
-    "gh-pages": "^6.1.1"
+    "gh-pages": "^6.2.0"
   }
 }
