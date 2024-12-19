@@ -4,56 +4,56 @@ import emailjs from 'emailjs-com';
 import './css/Footer.css';
 
 const Footer = () => {
-  const [joinUsFormState, setJoinUsFormState] = useState({
-    fullName: '',
-    email: '',
-    phone: '',
-    department: '',
-    message: '',
-    WhyIMC: ''
-  });
+  // const [joinUsFormState, setJoinUsFormState] = useState({
+  //   fullName: '',
+  //   email: '',
+  //   phone: '',
+  //   department: '',
+  //   message: '',
+  //   WhyIMC: ''
+  // });
 
-  /*const [contactFormState, setContactFormState] = useState({
+  const [contactFormState, setContactFormState] = useState({
     fullName: '',
     email: '',
     message: ''
-  });*/
+  });
 
-  const handleJoinUsChange = (e) => {
-    const { name, value } = e.target;
-    setJoinUsFormState((prevState) => ({ ...prevState, [name]: value }));
-  };
+  // const handleJoinUsChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setJoinUsFormState((prevState) => ({ ...prevState, [name]: value }));
+  // };
 
-  /*const handleContactChange = (e) => {
+  const handleContactChange = (e) => {
     const { name, value } = e.target;
     setContactFormState((prevState) => ({ ...prevState, [name]: value }));
-  };*/
-
-  const handleJoinUsSubmit = (e) => {
-    e.preventDefault();
-    emailjs
-      .sendForm('service_qu5a2ot', 'template_dgjpuzt', e.target, '95SxGZ7VKDvBOvW_f')
-      .then(
-        (result) => {
-          console.log(result.text);
-          setJoinUsFormState({
-            fullName: '',
-            email: '',
-            phone: '',
-            department: '',
-            message: '',
-            WhyIMC: ''
-          });
-          alert('Thank you for reaching out ! Your message has been sent successfully.');
-        },
-        (error) => {
-          console.error('There was an error sending the email:', error.text);
-          alert('Oops! Something went wrong. Please try again.');
-        }
-      );
   };
 
-  /*const handleContactSubmit = (e) => {
+  // const handleJoinUsSubmit = (e) => {
+  //   e.preventDefault();
+  //   emailjs
+  //     .sendForm('service_qu5a2ot', 'template_dgjpuzt', e.target, '95SxGZ7VKDvBOvW_f')
+  //     .then(
+  //       (result) => {
+  //         console.log(result.text);
+  //         setJoinUsFormState({
+  //           fullName: '',
+  //           email: '',
+  //           phone: '',
+  //           department: '',
+  //           message: '',
+  //           WhyIMC: ''
+  //         });
+  //         alert('Thank you for reaching out ! Your message has been sent successfully.');
+  //       },
+  //       (error) => {
+  //         console.error('There was an error sending the email:', error.text);
+  //         alert('Oops! Something went wrong. Please try again.');
+  //       }
+  //     );
+  // };
+
+  const handleContactSubmit = (e) => {
     e.preventDefault();
     emailjs
       .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_PUBLIC_KEY')
@@ -72,14 +72,14 @@ const Footer = () => {
           alert('Oops! Something went wrong. Please try again.');
         }
       );
-  };*/
+  };
 
   return (
     <div>
       {/* Contact Section */}
       <div id="contact">
         <div className="container">
-          <div className="contact-block">
+          {/* <div className="contact-block">
             <div className="section-title">
               <h2>JOIN US</h2>
               <p>
@@ -170,8 +170,8 @@ const Footer = () => {
                 Join Us
               </button>
             </form>
-          </div>
-          {/* 
+          </div> */}
+          {
           <div className="contact-info">
             <div className="contact-item">
               <h3>Contact Info</h3>
@@ -181,16 +181,16 @@ const Footer = () => {
               <p>
                 <FaEnvelope /> hi.imc2011@gmail.com
               </p>
-              <p>
+              {/* <p>
                 <FaFacebook />{' '}
-                <a href="https://www.facebook.com/IsammMicrosoftClub">Facebook</a>
+                <a href="https://www.facebook.com/IsammMicrosoftClub"></a>
               </p>
               <p>
                 <FaInstagram />{' '}
                 <a href="https://www.instagram.com/isamm_microsoft_club/?hl=en">
-                  Instagram
+                  
                 </a>
-              </p>
+              </p> */}
             </div>
             
             <div className="contact-form">
@@ -238,7 +238,7 @@ const Footer = () => {
               </form>
             </div> 
             
-          </div>*/}
+          </div>}
         </div>
       </div>
 
