@@ -16,7 +16,7 @@
     "web-vitals": "^2.1.4",
     "webpack": "^5.95.0"
   },
-  "homepage": "https://nourarmy.github.io/imc_website",
+  "homepage": "https://IMC-1.github.io/imc_website",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
