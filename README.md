@@ -8,13 +8,4 @@ Based on the code you provided, you need to install a few npm packages to ensure
 1. React Icons (react-icons)
 This package provides the FontAwesome icons like FaMapMarkerAlt, FaEnvelope, FaFacebook, and FaInstagram.
 
-Installation:
-
-bash
-Copier le code
-npm install react-icons
-2. EmailJS (emailjs-com)
-This package is used to send emails from your React application.
-
-
 
