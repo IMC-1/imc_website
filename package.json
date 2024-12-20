@@ -17,7 +17,6 @@
     "web-vitals": "^2.1.4",
     "webpack": "^5.95.0"
   },
-  
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
